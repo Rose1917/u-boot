@@ -296,9 +296,6 @@ int dram_init(void)
 int board_eth_init(struct bd_info *bis)
 {
 	int rc = 0;
-#ifdef CONFIG_MACB
-	rc = macb_eth_initialize(0, (void *)ATMEL_BASE_EMAC, 0x00);
-#endif
 	return rc;
 }
 #endif
