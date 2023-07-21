@@ -28,10 +28,6 @@ int init_func_watchdog_reset(void);
 #define INIT_FUNC_WATCHDOG_RESET
 #endif
 
-#if defined(CONFIG_HW_WATCHDOG) && defined(CONFIG_WATCHDOG)
-#  error "Configuration error: CONFIG_HW_WATCHDOG and CONFIG_WATCHDOG can't be used together."
-#endif
-
 /*
  * Prototypes from $(CPU)/cpu.c.
  */
